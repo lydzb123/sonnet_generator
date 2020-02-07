@@ -7,17 +7,17 @@ class SonnetGenerator::CLI
     puts "What is thy name?"
       name = gets.strip.capitalize
       @@name << name
-    puts "Dearest #{name}, which poet wouldst thou like to draw inspiration from?"
+    puts "Dearest #{name}, doth thou desire a canton? Enter 'Yes' or 'No'"
     puts "To exit The Sonnet Generator, enter 'adieu'"
     menu
   end
   
   def menu
     input = gets.strip.downcase
-    if input == "poet"
+    if input == "yes"
       poet_list
       menu
-    elsif input == "adieu"
+    elsif input == "no" || input == "adieu" 
       goodbye
     else
       invalid_entry
@@ -30,10 +30,31 @@ class SonnetGenerator::CLI
   end
   
   def poet_list
-    puts "1. Shakespeare"
-    puts "2. Williams"
-    puts "3. Payton"
-    puts "4. Longfellow"
+    puts "Which poet wouldst thou like to draw inspiration from?"
+
+puts"             _______________________"
+puts"           =(__    ___      __     _)="
+puts"             |                     |"
+puts"             |                     |"
+puts"             |    1. Shakespeare   |"
+puts"             |    2. Williams      |"
+puts"             |    3. Payton        |"
+puts"             |    4. Longfellow    |"
+puts"             |                     |"
+puts"             |                     |"
+puts"             |                     |"
+puts"             |__    ___   __    ___|"
+puts"           =(_______________________)="
+           
+           
+          
+    input = gets.strip.downcase
+    poet_selection(input)
+  end
+  
+  def poet_selection(poet)
+    puts "#{poet}"
+    #go over array and find starship
   end
   
   def goodbye
