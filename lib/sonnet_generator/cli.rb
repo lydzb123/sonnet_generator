@@ -3,8 +3,8 @@ class SonnetGenerator::CLI
   @@name = ""
   
   def call
-    puts "Welcome to The Sonnet Generator."
-    puts "What is thy name?"
+    puts "Welcome to The Shakespearean Sonnet Generator."
+    puts "What is thy full nameth?"
       name = gets.strip.capitalize
       @@name << name
     puts "Dearest #{name}, doth thou desire a canton? Enter 'Yes' or 'No'"
@@ -30,21 +30,21 @@ class SonnetGenerator::CLI
   end
   
   def poet_list
-    puts "Which poet wouldst thou like to draw inspiration from?"
+    puts "To the fairest, #{@@name}..."
 
-puts"             _______________________"
-puts"           =(__    ___      __     _)="
-puts"             |                     |"
-puts"             |                     |"
-puts"             |    1. Shakespeare   |"
-puts"             |    2. Williams      |"
-puts"             |    3. Payton        |"
-puts"             |    4. Longfellow    |"
-puts"             |                     |"
-puts"             |                     |"
-puts"             |                     |"
-puts"             |__    ___   __    ___|"
-puts"           =(_______________________)="
+# puts"             _______________________"
+# puts"           =(__    ___      __     _)="
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |                     |"
+# puts"             |__    ___   __    ___|"
+# puts"           =(_______________________)="
            
            
           
