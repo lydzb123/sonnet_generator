@@ -1,10 +1,7 @@
 # SonnetGenerator
 
-HELLO WORLD
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sonnet_generator`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The Sonnet Generator Gem allows users to create acrostic poems given their username. Given a name and selection of a poet, the generator will spit out a unique sonnet. Details on each stanza will be available for view. The goal is to create a fun customized sonnet, and to educate the user on various literary works and world reknown poets. 
 
 ## Installation
 
