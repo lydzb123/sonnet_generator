@@ -34,16 +34,22 @@ class SonnetGenerator::CLI
   
   def generate_poem(name)
     puts "To the fairest, #{@@name}..."
-    input = gets.strip.downcase
+    puts "POEM"
+      puts "POEM"
+        puts "POEM"
+          puts "POEM"
+            puts "POEM"
+    sub_menu
+  end
+  
+  
+  def sub_menu
     puts "-------------------------------------------------------"
     puts "To learn more about your custom sonnet, type 'View'"
     puts "To generate a new poem, type 'New'"
     puts "To exit, type 'Adieu'"
-    sub_menu(input)
-  end
-  
-  
-  def sub_menu(sub_input)
+    sub_input = gets.strip.downcase
+
     if sub_input == "view"
       learn_more
     elsif sub_input == "new"
@@ -58,6 +64,7 @@ class SonnetGenerator::CLI
   def learn_more
     puts "Your custom sonnet is comprised of Shakespeare's Sonnets: List of Sonnets"
     puts " To read the original Sonnet, type in the sonnet number (i.e. 1, 2, 3)"
+    
   end
   
 
