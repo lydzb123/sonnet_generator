@@ -5,5 +5,7 @@ gemspec
 
 require 'pry'
 require 'httparty'
-require 'json'
+require 'JSON'
+require 'csv'
 require 'nokogiri'
+require 'open-uri'

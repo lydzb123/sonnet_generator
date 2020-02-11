@@ -33,12 +33,10 @@ class SonnetGenerator::CLI
   
   def generate_poem(name)
     puts "To the fairest, #{@@name}..."
-    puts "POEM"
-      puts "POEM"
-        puts "POEM"
-          puts "POEM"
-            puts "POEM"
+   
+    puts "generated_poem"
     sub_menu
+
   end
   
   
