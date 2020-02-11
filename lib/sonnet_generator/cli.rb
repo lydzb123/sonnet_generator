@@ -3,12 +3,11 @@ class SonnetGenerator::CLI
   @@name = ""
   
   def call
-    puts "Welcome to The Shakespearean Sonnet Generator."
-    puts "What is thy full nameth?"
+    puts "Welcome to The Shakespearean Sonnet Generator!"
+    puts "Enter your name to proceed OR 'Adieu' shall you ever need to exit"
       name = gets.strip.capitalize
       @@name << name
     puts "Dearest #{name}, doth thou desire a canton? Enter 'Yes' or 'No'"
-    puts "To exit The Sonnet Generator, enter 'adieu'"
     menu
   end
   
