@@ -1,6 +1,9 @@
+
 class Sonnet
   attr_accessor :title, :lines
 
+  @@all = []
+  
   def initialize(attr_hash)
     attr_hash.each do |k, v|
         self.send("#{k}=", v) if self.respond_to?("#{k}=")
@@ -16,16 +19,8 @@ class Sonnet
     @@all
    end
 
-   
-  def find_by_letter(name_array)
-        new_sonnet = []
-        name_array.each do |letter|
-            sonnet.lines.first == letter
-            new_sonnet << sonnet.lines.first
-        end
-        new_sonnet
-  end
- 
+   def self.find_by_number(number)
+   end
 
 end
 

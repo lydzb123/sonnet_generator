@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gemspec
 
 require 'pry'
-require 'httparty'
+require 'HTTParty'
 require 'JSON'
 require 'csv'
 require 'nokogiri'
