@@ -1,3 +1,4 @@
+require 'pry'
 
 class Sonnet
   attr_accessor :title, :lines
@@ -13,15 +14,22 @@ class Sonnet
 
   def save
      @@all << self
-   end
+  end
 
-   def self.all
+  def self.all
     @@all
-   end
+  end
 
-   def self.find_by_number(number)
-   end
+  def self.lines
+    all_poem_lines = []
+    poem_lines = (self.all.map {|poem| poem.lines })
+    all_lines = poem_lines.map {|poem_lines| all_poem_lines << poem_lines }
+    all_lines.flatten
+  end
+
+  def self.find_by_number(number)
+  end
 
 end
 
-
+Sonnet.all
