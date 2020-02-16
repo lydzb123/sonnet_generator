@@ -1,7 +1,7 @@
 require 'pry'
 
 class Sonnet
-  attr_accessor :title, :lines
+  attr_accessor :title, :lines, :author, :linecount
 
   @@all = []
   
@@ -27,9 +27,4 @@ class Sonnet
     all_lines.flatten
   end
 
-  def self.find_by_number(number)
-  end
-
 end
-
-Sonnet.all
