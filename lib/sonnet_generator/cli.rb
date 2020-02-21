@@ -1,5 +1,7 @@
 class SonnetGenerator::CLI
   
+#******************************** HELPER METHODS ********************************
+
   def padding
     puts ""
   end
@@ -7,6 +9,22 @@ class SonnetGenerator::CLI
   def sleeper
     sleep(1)
   end
+
+  def goodbye
+    padding
+    puts "Adieu, #{@name}. Until next time.".colorize(:light_blue).bold
+    sleep(2)
+    system "clear"
+  end
+  
+  def invalid_entry
+      padding
+      puts "Invalid entry. Please try again."
+      menu
+  end
+  
+
+#******************************** INTRO PROMPT + INPUT/MENU ********************************
 
   def call
     system "clear"
@@ -54,6 +72,8 @@ class SonnetGenerator::CLI
   end
 
 
+  #******************************** RANDOM SONNET + SUBMENU ********************************
+
   def random_sonnet
     system "clear"
 
@@ -77,9 +97,6 @@ class SonnetGenerator::CLI
 
   end
 
-
-
-  
 
   def call_on_menu
 
@@ -124,6 +141,8 @@ class SonnetGenerator::CLI
     end
   end
 
+
+#******************************** CUSTOM POEM ********************************
 
   def custom_poem(name)
     system "clear"
@@ -191,19 +210,7 @@ class SonnetGenerator::CLI
 
   
 
-  def goodbye
-    padding
-    puts "Adieu, #{@name}. Until next time.".colorize(:light_blue).bold
-    sleep(1)
-    system "clear"
-  end
-  
-  def invalid_entry
-      padding
-      puts "Invalid entry. Please try again."
-      menu
-  end
-  
+
     
 
 end

@@ -8,8 +8,6 @@ require 'pry'
 require 'HTTParty'
 require 'JSON'
 require 'csv'
-require 'nokogiri'
-require 'open-uri'
 require 'colorize'
 require 'colorized_string'
 

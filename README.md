@@ -20,7 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Type the below and follow the on screen prompts.
+./bin/executable
 
 ## Development
 

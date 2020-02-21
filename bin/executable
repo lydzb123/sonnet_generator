@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/sonnet_generator'
+require_relative '../lib/sonnet_generator.rb'
 
 
 SonnetGenerator::CLI.new.call
+
+#namespace before ::
+#like a label
+
+
